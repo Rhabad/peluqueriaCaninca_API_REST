@@ -11,7 +11,7 @@ public class Alergias {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_alergias;
-    @Column(unique = true)
+    @Column(name = "nombre_alergia",unique = true)
     private String nombre_alergias;
 
     @OneToMany(mappedBy = "alergias")

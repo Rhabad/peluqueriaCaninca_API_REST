@@ -25,7 +25,7 @@ public class DueniosService {
     }
 
 
-    //crear un nuevo registro
+    //crear un nuevo registro/como tambien actualizar
     public ResponseEntity<Object> nuevoDuenio(Duenios duenios){
         datos = new HashMap<>();
         Optional<Duenios> due = dueniosRepository.findDueniosByCelular(duenios.getCelular());
