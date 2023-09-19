@@ -75,7 +75,7 @@ public class AlergiasService {
         datos.put("message", "Alergia eliminada");
         return new ResponseEntity<>(
                 datos,
-                HttpStatus.CREATED
+                HttpStatus.ACCEPTED
         );
 
     }
